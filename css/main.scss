@@ -86,34 +86,81 @@ a:focus {
 body section {    scroll-snap-align: start; }
 
 /* _______ HERO ________ */
-
-#hero {
+@media (min-width: 900px)  {
+  #hero {
     padding-top:7rem;
     width: 100%;
-
+    height:63vh;
     background-color: $neutral;
+  }
+  
+
+    .heroRight {
+      h2 {padding-top:4rem;}
+    }
+  }
+
+  @media (max-width: 668px)  {  
 
     .heroLeft {
-        img {width:30rem;}
+        img {width:18rem;
+          display:none;}
     }
 
   }
 
- .hero {
-    &__quote {background-color: $secondary;
-    margin-top:3rem;
-    padding:5rem;
-    text-align:center;
-    & p {color:white;}
-    & span {color:white;}}
- } 
+  @media (max-width: 375px)  {
+    .hero {
+      &__quote {background-color: $secondary;
+      margin-top:3rem;
+      padding:5rem;
+      text-align:center;
+      & p {color:white;}
+      & span {color:white;}}
+    } 
+   }
+    
+#hero {
+  padding-top:7rem;
+  width: 100%;
+  background-color: $neutral;
+}
+.hero {
+  &__quote {background-color: $secondary;
+  padding:5rem;
+  text-align:center;
+  & p {color:white;}
+  & span {color:white;}}
+} 
+
+		
+ .heroLeft {
+  img {width:30rem;}
+}
+
 
  /* _______ MISSION ________ */
 
- #mission {
+ @media (min-width: 736px) {
+  #mission {
     padding:9rem 6rem 7rem 6rem;
     width: 100%;
 	height: 100vh;
+    background-color: $secondary;
+
+  }
+
+  .kesakoRight {
+    img {width:25rem;}
+}
+
+ }
+
+ #mission {
+    padding:5rem 1rem 0 1rem;
+    width: 100%;
+    height: 160vh;
+	font-size:13px;
     background-color: $secondary;
 
   }
@@ -124,7 +171,7 @@ body section {    scroll-snap-align: start; }
  } 
 
  .kesakoRight {
-     img {width:25rem;}
+     img {width:13rem;}
  }
  .kesakoLeft {
     img {width:8rem;
@@ -133,16 +180,32 @@ body section {    scroll-snap-align: start; }
 
  /* _______ CONTACT ________ */
 
- #contact {
-    padding:9rem 6rem 7rem 6rem;
+
+  #contact {
+    padding:9rem 2rem 4rem 2rem;
     width: 100%;
-	height: 100vh;
+  height: 100vh;
     background-color: $neutral;
 
   }
 
 .content {
-      img {width:25rem;}}
+& form {  width:15rem;}
+}
+      
+
+      @media (min-width: 668px) {
+        #contact {
+          padding:9rem 6rem 7rem 6rem;
+          width: 100%;
+        height: 100vh;
+          background-color: $neutral;
+      
+        }
+
+        .content {
+          & form {  width:45rem;} }
+        }
 
 
 /* _______ FOOTER ________ */

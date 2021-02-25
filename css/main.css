@@ -66,18 +66,46 @@ body section {
 }
 
 /* _______ HERO ________ */
+@media (min-width: 900px) {
+  #hero {
+    padding-top: 7rem;
+    width: 100%;
+    height: 63vh;
+    background-color: #fcfcfc;
+  }
+
+  .heroRight h2 {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 668px) {
+  .heroLeft img {
+    width: 18rem;
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .hero__quote {
+    background-color: #2F2E41;
+    margin-top: 3rem;
+    padding: 5rem;
+    text-align: center;
+  }
+  .hero__quote p {
+    color: white;
+  }
+  .hero__quote span {
+    color: white;
+  }
+}
 #hero {
   padding-top: 7rem;
   width: 100%;
   background-color: #fcfcfc;
 }
-#hero .heroLeft img {
-  width: 30rem;
-}
 
 .hero__quote {
   background-color: #2F2E41;
-  margin-top: 3rem;
   padding: 5rem;
   text-align: center;
 }
@@ -88,11 +116,28 @@ body section {
   color: white;
 }
 
+.heroLeft img {
+  width: 30rem;
+}
+
 /* _______ MISSION ________ */
+@media (min-width: 736px) {
+  #mission {
+    padding: 9rem 6rem 7rem 6rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #2F2E41;
+  }
+
+  .kesakoRight img {
+    width: 25rem;
+  }
+}
 #mission {
-  padding: 9rem 6rem 7rem 6rem;
+  padding: 5rem 1rem 0 1rem;
   width: 100%;
-  height: 100vh;
+  height: 160vh;
+  font-size: 13px;
   background-color: #2F2E41;
 }
 
@@ -102,7 +147,7 @@ body section {
 }
 
 .kesakoRight img {
-  width: 25rem;
+  width: 13rem;
 }
 
 .kesakoLeft img {
@@ -112,16 +157,28 @@ body section {
 
 /* _______ CONTACT ________ */
 #contact {
-  padding: 9rem 6rem 7rem 6rem;
+  padding: 9rem 2rem 4rem 2rem;
   width: 100%;
   height: 100vh;
   background-color: #fcfcfc;
 }
 
-.content img {
-  width: 25rem;
+.content form {
+  width: 15rem;
 }
 
+@media (min-width: 668px) {
+  #contact {
+    padding: 9rem 6rem 7rem 6rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #fcfcfc;
+  }
+
+  .content form {
+    width: 45rem;
+  }
+}
 /* _______ FOOTER ________ */
 footer {
   background-color: #2F2E41;
